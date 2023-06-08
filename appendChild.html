@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appendChild</title>
+</head>
+<body>
+    <center>
+        <div id="lista">
+            <h2>Lista</h2></center>
+        </div>
+    </center>
+    <br>
+    <br>
+    <br>
+    
+    <input type="text" id="item" placeholder="Deigite o Item">
+    <br>
+
+    <p>Escolha a cor do item</p>
+    <input type="radio" name="cor" value="Red"> Vermelho
+    <input type="radio" name="cor" value="Yellow">Amarelo
+    <input type="radio" name="cor" value="Blue">Verde
+    <br>
+    <p>Click em "Adicionar" para adicionar o item à lista:</p>
+    <button id="ad_item">Adicionar</button>
+   
+    <script>
+        var adicionarButton = document.getElementById("ad_item");
+
+        ad_item.addEventListener("click", adicionarItem);
+        
+        function adicionarItem() {
+            var lista = document.getElementById("lista");
+            var item = document.getElementById("item").value;
+            var itemNovo = document.createElement("li");
+            itemNovo.textContent = item;
+            var corCheck = document.querySelector('input[name="cor"]:checked').value;
+            itemNovo.style.color = corCheck;
+            lista.appendChild(itemNovo);
+        }
+    </script>
+
+</body>
+</html>

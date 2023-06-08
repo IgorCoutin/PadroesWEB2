@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+  }
+  
+  .input-container {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  .resultado {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .situacao-normal {
+    color: green;
+  }
+  
+  .situacao-alerta {
+    color: orange;
+  }
+  
+  .situacao-perigo {
+    color: red;
+  }
